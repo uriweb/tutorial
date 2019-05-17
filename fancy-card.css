@@ -90,3 +90,23 @@
 	width: 100%;
 	height: auto;
 }
+
+
+
+.fader {
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	border: 1px solid red;
+}
+.fader .meta {
+	line-height: 1.5;
+	padding: 2rem;
+	opacity: 0;
+	transition: all .2s ease-in-out;
+}
+.fader:hover .meta {
+	background: rgba(169,169,169, .3);
+	-webkit-backdrop-filter: blur(4px) saturate(150%) brightness(50%);
+	opacity: 1;
+}
