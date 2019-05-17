@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,7 +8,7 @@
 
 		<title>Site Title</title>
 		<meta name="robots" content="noindex,follow">
-		
+
 		<link rel="stylesheet" href="static/style.static.css" type="text/css" media="all">
 
 		<!-- Favicons -->
@@ -17,75 +17,24 @@
 		<link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="180x180" href="static/images/apple-touch-icon-180x180.png">
 
+		<link rel='stylesheet' id='uricl-css-css'  href='https://www.uri.edu/wp-content/plugins/uri-component-library/css/cl.built.css' type='text/css' media='all' />
+
+
 		<style>
-			
-			
-			.fancy {
-				display: block;
-				overflow: hidden;
-				position: relative;
-			}
-			.fancy .meta {
-				background: rgba(169,169,169, .3);
-				-webkit-backdrop-filter: blur(4px) saturate(150%);
-				backdrop-filter: blur(4px) saturate(50%);
-				height: 100%;
-				position: absolute;
-				bottom: -75%;
-				transition: all .2s ease-in-out;
-				width: 100%;
-				z-index: 1;
-			}
-			.fancy:hover .meta, .fancy:focus .meta {
-				bottom: 0 !important;
-			}
-			
-			.fancy .meta h1 {
-				color: #fff;
-				margin: 60px;
-			}
-			.fancy .meta .excerpt {
-				color: white;
-				font-size: 125%;
-				line-height: 1.6;
-				margin-top: 60px;
-				margin-left: 60px;
-				margin-right: 60px;
-				opacity: 0.0;
-			}
-			.fancy:hover .meta .excerpt {
-				opacity: 1.0;
-				transition: 1s;
-		 }
-			.fancy img {
-				display: block;
-				width: 100%;
-				height: auto;
-			}
-			button {
-				border:1px solid grey;
-				padding: 1em 2em;
-				background-color: white;
-				color: black;
-				text-align: center;
-				display: block;
-				margin: 0 auto;
-				max-width: 200;
-				font-size: 1rem;
-			}
+			@import url('fancy-card.css');
 		</style>
 
 	</head>
-	
+
 	<body class="page-template-default page">
-	
+
 		<div id="page" class="site">
 			<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
-			
+
 			<div id="masthead">
-				
+
 				<header id="brandbar" class="site-header" role="banner">
-		
+
 					<div id="identity-print"><img src="images/logo-print.png" width="120px" alt="University of Rhode Island"></div>
 
 					<div id="globalsearch" role="search">
@@ -122,7 +71,7 @@
 					</div>
 
 				</header><!-- #brandbar -->
-				
+
 				<header id="siteheader">
 
 					<div id="sitebanner"><!-- option: class="light" -->
@@ -145,48 +94,61 @@
 					<div id="navigation" class="content-width">
 						<div id="localnav"></div>
 					</div>
-					
+
 				</header>
-				
+
 			</div><!-- #masthead -->
-	
+
 			<div id="content" class="site-content">
-				
+
 				<main id="main" class="site-main" role="main">
-					
+
 <!-- ===================== DO NOT CHANGE ANYTHING ABOVE THIS LINE ===================== -->
 <!-- =============================== START PAGE CONTENT =============================== -->
-					
+
 					<article class="page">
-						
+
 						<header class="entry-header">
 							<h1 class="entry-title">Focus Demonstration</h1>
 						</header>
-						
+
 						<div class="entry-content">
-							
+
+<a class="cl-card" href="#">
+    <img>
+    <div class="cl-card-text">
+        <h3>Title</h3>
+        <p>Paragraph text.</p>
+    </div>
+    <div class="cl-button">Button</div>
+</a>
+
+<br>
+<hr>
+<br>
+
 							<a class="fancy" href="#" ontouchup="return false;">
 								<img src="Munny-Speakers.jpg" alt="humina humina" />
 								<div class="meta">
 									<h1>You have cat to be kitten me right meow</h1>
-									<div class="excerpt">You have cat to be kitten me right meow cat cat moo moo lick ears lick paws, you are a captive audience while sitting on the toilet, pet me. Lick human with sandpaper tongue cough yet i cry and cry and cry unless you pet me, and then maybe i cry just for fun. I shredded your linens for you ptracy. Pushes butt to face. More napping, more napping all the napping is exhausting plan steps for world domination. Meowwww meowwww attack dog, run away and pretend to be victim 
+									<div class="excerpt">You have cat to be kitten me right meow cat cat moo moo lick ears lick paws, you are a captive audience while sitting on the toilet, pet me. Lick human with sandpaper tongue cough yet i cry and cry and cry unless you pet me, and then maybe i cry just for fun. I shredded your linens for you ptracy. Pushes butt to face. More napping, more napping all the napping is exhausting plan steps for world domination. Meowwww meowwww attack dog, run away and pretend to be victim
                                         <button>EXPLORE</button></div>
 								</div>
 							</a>
-							
-							
+
+
 						</div>
-						
-						
-						
-					
+
+
+
+
 					</article>
-					
-<!-- ================================ END PAGE CONTENT ================================ -->	
+
+<!-- ================================ END PAGE CONTENT ================================ -->
 <!-- ===================== DO NOT CHANGE ANYTHING BELOW THIS LINE ===================== -->
 
 				</main><!-- #main -->
-				
+
 			</div><!-- #content -->
 
 			<div id="actionbar-wrapper">
@@ -242,17 +204,17 @@
 					<p>Copyright &copy; <a class="subtle" href="http://www.uri.edu/">University of Rhode Island</a> | University of Rhode Island, Kingston, RI 02881, USA | 1.401.874.1000</p>
 					<p>URI is an equal opportunity employer committed to the principles of affirmative action.&nbsp;&nbsp;<a class="jobs" href="https://jobs.uri.edu/">Work at URI</a></p>
 				</div>
-				
+
 			</footer><!-- #globalfooter -->
-			
+
 		</div><!-- #page -->
 
 		<script type="text/javascript" src="static/script.static.min.js"></script>
 		<script>
-		
+
 			window.addEventListener('load', initFancy, false);
 			window.addEventListener('resize', initFancy, false);
-			
+
 			function initFancy() {
 				var fancies = document.querySelectorAll('a.fancy');
 				for(var x in fancies) {
@@ -265,21 +227,17 @@
 					meta.style.bottom = - (mh - hh) + 'px';
 				}
 			}
-			
-			
+
+
 			function getFancyHeight(el) {
 				var h = el.offsetHeight;
 				h += parseInt(window.getComputedStyle(el).getPropertyValue('margin-top'));
 				h += parseInt(window.getComputedStyle(el).getPropertyValue('margin-bottom'));
 				return h;
 			}
-			
+
 
 		</script>
 
 	</body>
 </html>
-
-				
-				
-				

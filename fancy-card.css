@@ -1,0 +1,53 @@
+.fancy {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+.fancy .meta {
+	background: rgba(169,169,169, .3);
+	-webkit-backdrop-filter: blur(4px) saturate(150%);
+	backdrop-filter: blur(4px) saturate(50%);
+	height: 100%;
+	position: absolute;
+	bottom: -75%;
+	transition: all .2s ease-in-out;
+	width: 100%;
+	z-index: 1;
+}
+.fancy:hover .meta, .fancy:focus .meta {
+	bottom: 0 !important;
+}
+
+.fancy .meta h1 {
+	color: #fff;
+	margin: 60px;
+}
+.fancy .meta .excerpt {
+	color: white;
+	font-size: 125%;
+	line-height: 1.6;
+	margin-top: 60px;
+	margin-left: 60px;
+	margin-right: 60px;
+	opacity: 0.0;
+}
+.fancy:hover .meta .excerpt {
+	opacity: 1.0;
+	transition: 1s;
+}
+.fancy img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+button {
+	border:1px solid grey;
+	padding: 1em 2em;
+	background-color: white;
+	color: black;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	max-width: 200;
+	font-size: 1rem;
+}
